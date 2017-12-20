@@ -8,7 +8,7 @@ int main()
 {
     char s[100];
     int len;
-    strcpy(s, " Iam.");
+    strcpy(s, " The king of kings.");
     len=strlen(s);
     
     row();
