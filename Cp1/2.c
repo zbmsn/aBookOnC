@@ -12,7 +12,7 @@ int main(void)
     return 0;
 }
 
-/* 385/1760=0 
-   385/1760.0=0.21875
+/* int 385/1760  =0 
+   int 385/1760.0=0.21875
    integer division discards any fractional part.
    */
