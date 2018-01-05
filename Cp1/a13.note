@@ -1,0 +1,13 @@
+for(expr1;expr2;expr3)
+  statement
+  
+expr1;
+  while(expr2)
+  {
+  statement
+  expr3;
+  }
+  
+  
+No semicolon following statement, it can have semicolon, but not have to.
+Compiler HAPPY!
