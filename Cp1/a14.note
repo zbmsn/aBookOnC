@@ -1,1 +1,24 @@
 D:\gcc\mingw64\lib\gcc\x86_64-w64-mingw32\7.2.0\include\ssp\stdio.h
+
+extern int __sprintf_chk (char *__restrict__ __s, int __flag, size_t __slen,
+			  __const char *__restrict__ __format, ...);
+extern int __vsprintf_chk (char *__restrict__ __s, int __flag, size_t __slen,
+			   __const char *__restrict__ __format,
+			   va_list __ap);
+
+
+can't find /* int printf(const char *format, ...); */
+
+
+CODE:
+
+int printf(const char *format, ...);
+
+int main()
+{
+    printf("123\n");
+    
+    return 0;
+}
+
+/* This code can be well compiled. */
