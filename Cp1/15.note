@@ -1,0 +1,19 @@
+avg+=(x-avg)/i;
+
+sum+=x;
+navg=sum/i;
+
+
+
+Avg[i] = Avg[i-1] + (X[i] - Avg[i-1])/i  //很容易理解
+= (X[i] + (i-1)*Avg[i-1])/i //提取因子
+===> i*Avg[i] = X[i] + (i-1)*Avg[i-1] //移项i
+===> n * Avg[n] = ∑X[i]{i,1,n} //累加结果
+===> Avg[n] = ∑X[i] / n //done
+
+
+I dont know why the first way is better than the second way!
+i*Avg[i]=x[i]+(i+1)*Avg[i-1];
+i*Avg[i]=x[i]+sum[i-1];
+
+Maybe because (i+1)*Avg[i-1] is better than sum[i-1]=x[0]+x[1]+...+x[i].
