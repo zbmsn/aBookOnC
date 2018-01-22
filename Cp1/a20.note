@@ -1,0 +1,8 @@
+cnt=printf("abc abc");   // output is 7
+cnt=printf("abc\nabc\n"); //output is 8
+cnt=printf("abc\0abc\0"); // output is 3 and with a warning
+
+prog.c: In function 'main':
+prog.c:8:20: warning: embedded '\0' in format [-Wformat-contains-nul]
+     cnt=printf("abc\0abc\0");
+                    ^~
