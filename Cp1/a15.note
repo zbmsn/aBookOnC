@@ -16,4 +16,4 @@ I dont know why the first way is better than the second way!
 i*Avg[i]=x[i]+(i+1)*Avg[i-1];
 i*Avg[i]=x[i]+sum[i-1];
 
-Maybe because (i+1)*Avg[i-1] is better than sum[i-1]=x[0]+x[1]+...+x[i].
+Because sum[i]=x[0]+x[1]+...+x[i] maybe overflow in some case.
