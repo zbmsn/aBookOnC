@@ -1,0 +1,4 @@
+prog.c: In function 'main':
+prog.c:7:6: error: assignment of read-only variable 'a'
+     a=333;
+      ^
